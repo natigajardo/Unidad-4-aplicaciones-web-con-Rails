@@ -92,6 +92,7 @@ class Pato < Ave
     include Habilidades::Nadador 
     include Habilidades::Volador
     include Alimentacion::Carnivoro
+    alias :carnivoro_nuevo :comer 
     include Alimentacion::Herbivoro
 end 
 
